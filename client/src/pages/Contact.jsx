@@ -1,5 +1,5 @@
 const Contact = () => {
-    return (
+    return(
         
 
 <html lang="en">
@@ -40,10 +40,6 @@ const Contact = () => {
 
 </footer>
 </html>
-
-
-
-
     );
 };
 export default Contact
