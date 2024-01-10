@@ -1,3 +1,5 @@
+import '../styles/Home.css';
+
 const Home = () => {
     return (
         <h1>Homepage</h1>
