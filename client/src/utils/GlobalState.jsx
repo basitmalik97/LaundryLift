@@ -8,7 +8,7 @@ const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
     
     //intial state
-    products: [],
+    services: [],
     cart: [],
     cartOpen: false,
   });
