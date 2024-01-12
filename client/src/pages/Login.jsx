@@ -1,7 +1,7 @@
 
 const Login = () => {
     return (
-<body>
+<body className="login-body">
 <div className="wrapper">
     <form action="">
         <h1>Login</h1>

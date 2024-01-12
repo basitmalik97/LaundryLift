@@ -490,7 +490,7 @@ footer {
       border: 2px solid rgb(105, 138, 220);
       backdrop-filter: blur(20px);
   }
-  body{
+  .login-body{
       justify-content: center;
       align-items: center;
       display: flex;
@@ -662,7 +662,7 @@ main {
   height: 200px;
 }
 
-h1 {
+.services-h1 {
   font-size: 3.25rem;
   font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
@@ -753,8 +753,8 @@ h2 {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
-*{
+}
+.about-all{
 margin:0px;
 padding:0px;
 box-sizing: border-box;
@@ -777,7 +777,6 @@ article h1{
     font-size: 50px;
     font-weight:800;
 }
-.testimonial{
+.testimonial {
     padding:30px 100px;
-
 }
