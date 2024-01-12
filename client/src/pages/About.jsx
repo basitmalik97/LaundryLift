@@ -1,11 +1,12 @@
 const About = () => {
     return (
-<div className="wrapper about-all">
-    <div className="testimonial">
-        <article>
-            <head>
-                <h1>About us</h1>
-                <img src="about us.png"
+    <div className="about-all">
+        <div className="wrapper-about">
+            <div className="testimonial">
+                <article>
+                    <main>
+                        <h1 className="article-h1">About us</h1>
+                        <img src="./src/assets/about-us.png"
                 width="200"
                 height="200" />
 
@@ -51,9 +52,10 @@ Sit back and relax as we bring your freshly cleaned and neatly folded laundry ba
                <br /> 
                </div>
                
-            </head>
+            </main>
         </article>
     </div>
+</div>
 </div>
     );
 };
