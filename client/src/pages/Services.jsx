@@ -1,10 +1,12 @@
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const Services = () => {
     return (
         
-        <body>
-        
-            <div className="gradient-section">
+        <body className="gradient-section">
+            <Nav />
+            <div>
         
                 <div className="bg-container">
                     <main>
@@ -33,7 +35,7 @@ const Services = () => {
                         </div>
         
                         <div className="herobox2-img">
-                            <img src="./images/Washing.jpg" alt="Image for washing." />
+                            <img src="./src/assets/washing.jpg" alt="Image for washing." />
                         </div>
                     </div>
         
@@ -51,7 +53,7 @@ const Services = () => {
                         </div>
         
                         <div className="herobox3-img">
-                            <img src="./images/Ironing.jpg" alt="Image for Ironing." />
+                            <img src="./src/assets/Ironing.jpg" alt="Image for Ironing." />
                         </div>
         
                     </div>
@@ -70,7 +72,7 @@ const Services = () => {
                         </div>
         
                         <div className="herobox4-img">
-                            <img src="./images/Folding.jpg" alt="Image for Folding." />
+                            <img src="./src/assets/Folding.jpg" alt="Image for Folding." />
                         </div>
         
                     </div>
@@ -89,7 +91,7 @@ const Services = () => {
                         </div>
         
                         <div className="herobox5-img">
-                            <img src="./images/Dry-cleaning.jpg" alt="Image for dry cleaning." />
+                            <img src="./src/assets/Dry-cleaning.jpg" alt="Image for dry cleaning." />
                         </div>
         
                     </div>
@@ -110,7 +112,7 @@ const Services = () => {
                         </div>
         
                         <div className="herobox6-img">
-                            <img src="./images/Wash-fold.jpg" alt="Image for wash & fold." />
+                            <img src="./src/assets/Wash-fold.jpg" alt="Image for wash & fold." />
                         </div>
         
                     </div>
@@ -130,12 +132,13 @@ const Services = () => {
                         </div>
         
                         <div className="herobox7-img">
-                            <img src="./images/Wash-Iron.webp" alt="Image for wash & iron." />
+                            <img src="./src/assets/Wash-Iron.webp" alt="Image for wash & iron." />
                         </div>
         
                     </div>
                 </div>
             </div>
+            <Footer />
         </body>
           );
 };

@@ -1,3 +1,7 @@
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+
+
 const slides = document.querySelectorAll('.sliding-div');
 let currentIndex = 0;
 console.log("Script2 is loaded");
@@ -28,6 +32,7 @@ const Home = () => {
 <body>
     <div className="bg-container" >
         <div className="gradient-section" > 
+        <Nav />
         <div className="herobox1"> 
             <h1 className="home-page-heading">How we work</h1>
               <p className="home-page-para">Experience seamless laundry care in four simple steps: <br /> order online, enjoy convenient pick-up, trust our expert <br />
@@ -199,7 +204,8 @@ const Home = () => {
                 </form>
             </div>
         </div>
-       </div>  
+       </div>
+       <Footer />  
     </body>
     );
 };
