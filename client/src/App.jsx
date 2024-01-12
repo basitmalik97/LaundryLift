@@ -3,6 +3,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@ap
 import { setContext } from '@apollo/client/link/context';
 
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import { StoreProvider } from './utils/GlobalState';
 
 const httpLink = createHttpLink({
@@ -30,6 +31,7 @@ function App() {
       <StoreProvider>
         <Nav />
         <Outlet />
+        <Footer />
       </StoreProvider>
     </ApolloProvider>
   );
