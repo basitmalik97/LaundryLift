@@ -17,7 +17,7 @@ return (
     <header>
         <div className="logo">
             <a href="#">
-                <img src="./images/Logo.png" alt="Logo" /> Laundry Lift
+                <img src="./src/assets/Logo.png" alt="Logo" /> Laundry Lift
             </a>
         </div>
          <nav>
