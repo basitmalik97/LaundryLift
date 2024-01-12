@@ -7,46 +7,6 @@ const Services = () => {
             <div className="gradient-section">
         
                 <div className="bg-container">
-        
-        
-                    {/* <!-- Nav/Header Section --> */}
-        
-                    <header>
-                        <div className="logo">
-                            <a href="#">
-                                <img src="./images/Logo.png" alt="Logo" /> Laundry Lift
-                            </a>
-                        </div>
-        
-                        <nav>
-        
-        
-                            <div className="navbutton">
-                                <a href="#">Home</a>
-                            </div>
-        
-                            <div className="navbutton">
-                                <a href="#">About Us</a>
-                            </div>
-        
-                            <div className="navbutton">
-                                <a href="#">Services</a>
-                            </div>
-        
-                            <div className="contactusnavbutton">
-                                <a href="#">Contact Us</a>
-                            </div>
-        
-                            <div className="loginnavbutton">
-                                <a href="#">Login</a>
-                            </div>
-        
-        
-                        </nav>
-                    </header>
-        
-                    {/* <!-- Main Section --> */}
-        
                     <main>
                         <div className="herobox1">
         
