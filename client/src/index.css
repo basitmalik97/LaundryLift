@@ -653,6 +653,105 @@ footer {
 }
 
 
+main {
+  min-height: 200px;
+}
+
+.herobox1 {
+  width: 100%;
+  height: 200px;
+}
+
+h1 {
+  font-size: 3.25rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+  color: white;
+}
+
+.main-p {
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.mybutton {
+  background-color: white;
+  color: #FA4083;
+  font-family: 'Playfair Display', serif;
+  padding: 11px 25px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+  margin-top: 20px;
+}
+
+.mybutton:hover {
+  background-color: rgb(29, 213, 103);
+  transition-duration: 1s;
+}
+
+.service-section {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.herobox2,
+.herobox3,
+.herobox4,
+.herobox5,
+.herobox6,
+.herobox7 {
+  flex: 2;
+  padding-right: 100px;
+  width: 350px;
+  height: 300px;
+  padding-top: 50px;
+}
+
+.herobox2-img,
+.herobox3-img
+.herobox4-img,
+.herobox5-img,
+.herobox6-img,
+.herobox7-img {
+  flex: 1; 
+  width: 350px;
+  height: 300px;
+}
+
+.herobox2-img img,
+.herobox3-img img,
+.herobox4-img img,
+.herobox5-img img,
+.herobox6-img img,
+.herobox7-img img {
+  width: 350px;
+  height: 250px;
+  padding-top: 40px;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+  color: white;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 *{
@@ -680,4 +779,5 @@ article h1{
 }
 .testimonial{
     padding:30px 100px;
+
 }
