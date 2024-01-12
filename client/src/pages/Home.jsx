@@ -28,36 +28,6 @@ const Home = () => {
 <body>
     <div className="bg-container" >
         <div className="gradient-section" > 
-{/* 
-            <header>
-                <div className="logo">
-                    <a href="#">
-                        <img src="./images/Logo.png" alt="Logo" /> Laundry Lift
-                    </a>
-                </div>
-                <nav>
-                    <div className="navbutton">
-                        <a href="#">Home</a>
-                    </div>
-    
-                    <div className="navbutton">
-                        <a href="#">About Us</a>
-                    </div>
-                    
-                    <div className="navbutton">
-                        <a href="#">Services</a>
-                    </div>
-
-                    <div className="contactusnavbutton">
-                        <a href="#">Contact Us</a>
-                    </div>
-
-                    <div className="loginnavbutton">
-                        <a href="#">Login</a>
-                    </div>
-                </nav>
-        </header> */}
-
         <div className="herobox1"> 
             <h1>How we work</h1>
               <p>Experience seamless laundry care in four simple steps: <br /> order online, enjoy convenient pick-up, trust our expert <br />
@@ -85,19 +55,19 @@ const Home = () => {
                 <div className="card-set">
                     <div className="card-set-c">
                         <a href="#">
-                            <img src="./images/Washing.jpg" alt="Washing-Photo" />
+                            <img src="./src/assets/washing.jpg" alt="Washing-Photo" />
                             <h4>Washing</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
                         <a href="#">
-                            <img src="./images/Ironing.jpg" alt="Ironing-Photo" />
+                            <img src="./src/assets/Ironing.jpg" alt="Ironing-Photo" />
                             <h4>Ironing</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
                         <a href="#">
-                            <img src="./images/Folding.jpg" alt="Folding-Photo" />
+                            <img src="./src/assets/Folding.jpg" alt="Folding-Photo" />
                             <h4>Folding</h4>
                         </a>
                     </div>
@@ -107,19 +77,19 @@ const Home = () => {
 
                     <div className="card-set-c">
                         <a href="#">
-                            <img src="./images/Dry-cleaning.jpg" alt="Dry-cleaning-Photo" />
+                            <img src="./src/assets/Dry-cleaning.jpg" alt="Dry-cleaning-Photo" />
                             <h4>Dry cleaning</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
                         <a href="#">
-                            <img src="./images/Wash-fold.jpg" alt="Wash-Fold-Photo" />
+                            <img src="./src/assets/Wash-fold.jpg" alt="Wash-Fold-Photo" />
                             <h4>Wash & Fold</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
                         <a href="#">
-                            <img src="./images/Wash-Iron.webp" alt="" />
+                            <img src="./src/assets/Wash-Iron.webp" alt="" />
                             <h4>Wash & Iron</h4>
                         </a>
                     </div>
@@ -145,7 +115,7 @@ const Home = () => {
 
                     <div className="pricing-set-c">
                         <a href="#">
-                            <img src="./images/Basic-package.png" alt="Basic-Pack-Photo" />
+                            <img src="./src/assets/Basic-package.png" alt="Basic-Pack-Photo" />
                         </a>    
                         <div className="overlay">
                             <button className="get-started-button">Get Started</button>
@@ -154,7 +124,7 @@ const Home = () => {
 
                     <div className="pricing-set-c">
                         <a href="#">
-                            <img src="./images/Express-package.png" alt="Express-Package-Photo"/>
+                            <img src="./src/assets/Express-package.png" alt="Express-Package-Photo"/>
                         </a>
                         <div className="overlay">
                             <button className="get-started-button">Get Started</button>
@@ -163,7 +133,7 @@ const Home = () => {
 
                     <div className="pricing-set-c">
                         <a href="#">
-                            <img src="./images/Luxury-package.png" alt="Luxury-Package-Photo" />
+                            <img src="./src/assets/Luxury-package.png" alt="Luxury-Package-Photo" />
                         </a>
                         <div className="overlay">
                             <button className="get-started-button">Get Started</button>
@@ -172,7 +142,7 @@ const Home = () => {
 
                     <div className="pricing-set-c">
                         <a href="#">
-                            <img src="./images/Custom-package.png" alt="Custom-Package-Photo" />
+                            <img src="./src/assets/Custom-package.png" alt="Custom-Package-Photo" />
                         </a>
                         <div className="overlay">
                             <button className="get-started-button">Get Started</button>
@@ -187,7 +157,7 @@ const Home = () => {
                         <div className="testimonial-set">
                             <div className="testimonial-set-photo">
                         <a href="#">
-                            <img src="./images/Testimonial-photo.png" alt="testimonial-photo" />
+                            <img src="./src/assets/Testimonial-photo.png" alt="testimonial-photo" />
                         </a>    
                     </div>
 
