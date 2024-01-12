@@ -1,4 +1,3 @@
-import '../styles/Services.css';
 
 const Services = () => {
     return (
