@@ -198,45 +198,8 @@ const Home = () => {
                   <button type="submit" className="btn-subscribe">Subscribe</button>
                 </form>
             </div>
-            <footer>
-                <div className="footer-social">
-                    <a className="home-page-a" href="#" target="_blank" className="fa fa-facebook"></a>
-                    <a className="home-page-a" href="#" target="_blank" className="fa fa-twitter"></a>
-                    <a className="home-page-a" href="#" target="_blank" className="fa fa-instagram"></a>
-                    <br />
-                    <br />
-                </div>
-
-                <div className="footer-nav">
-
-                    <div className="footer-navbutton">
-                        <a className="home-page-a" href="#">Home</a>
-                    </div>
-    
-                    <div className="footer-navbutton">
-                        <a className="home-page-a" href="#">About Us</a>
-                    </div>
-                    
-                    <div className="footer-navbutton">
-                        <a className="home-page-a" href="#">Services</a>
-                    </div>
-    
-                    <div className="footer-navbutton">
-                        <a className="home-page-a" href="#">Contact Us</a>
-                    </div>
-    
-                    <div className="footer-navbutton">
-                        <a className="home-page-a" href="#">Login</a>
-                    </div>
-                </div>
-
-
-        
-                <div className="footer-bottom">
-                    All rights reserved - Copyright 2023©
-                </div>   
-            </footer>
-            </div>
+        </div>
+       </div>
     </div>  
     </body>
     );
