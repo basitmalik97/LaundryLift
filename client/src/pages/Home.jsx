@@ -199,8 +199,7 @@ const Home = () => {
                 </form>
             </div>
         </div>
-       </div>
-    </div>  
+       </div>  
     </body>
     );
 };
