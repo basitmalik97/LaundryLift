@@ -11,23 +11,23 @@ return (
         </div>
          <nav>
             <div className="navbutton">
-                <a href="#">Home</a>
+                <a href="/home">Home</a>
             </div>
     
             <div className="navbutton">
-                <a href="#">About Us</a>
+                <a href="/about">About Us</a>
             </div>
                     
             <div className="navbutton">
-                <a href="#">Services</a>
+                <a href="/services">Services</a>
             </div>
 
             <div className="contactusnavbutton">
-                <a href="#">Contact Us</a>
+                <a href="/contact">Contact Us</a>
             </div>
 
             <div className="loginnavbutton">
-                <a href="#">Login</a>
+                <a href="/login">Login</a>
             </div>   
         </nav>
     </header>
