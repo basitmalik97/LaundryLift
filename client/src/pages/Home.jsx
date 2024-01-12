@@ -29,44 +29,44 @@ const Home = () => {
     <div className="bg-container" >
         <div className="gradient-section" > 
         <div className="herobox1"> 
-            <h1>How we work</h1>
-              <p>Experience seamless laundry care in four simple steps: <br /> order online, enjoy convenient pick-up, trust our expert <br />
+            <h1 className="home-page-heading">How we work</h1>
+              <p className="home-page-para">Experience seamless laundry care in four simple steps: <br /> order online, enjoy convenient pick-up, trust our expert <br />
                   cleaning, and receive hassle-free delivery to your doorstep.</p>
         </div>
-            <main>
-                <div className="cards">
-                    <div className="card">
-                            <h3>1 <br /> <br /> Order</h3>
+            <main className="home-page-main">
+                <div className="home-page-cards">
+                    <div className="home-page-card">
+                            <h3 className="cards-heading">1 <br /> Order</h3>
                     </div>
-                    <div className="card">
-                            <h3>2  <br /> Pick Up</h3>
+                    <div className="home-page-card">
+                            <h3 className="cards-heading">2  <br /> Pick Up</h3>
                     </div>
-                    <div className="card">
-                            <h3>3  <br /> Cleaning</h3>
+                    <div className="home-page-card">
+                            <h3 className="cards-heading">3  <br /> Cleaning</h3>
                     </div>
-                    <div className="card">
-                            <h3>4  <br /> Delivery</h3>
+                    <div className="home-page-card">
+                            <h3 className="cards-heading">4  <br /> Delivery</h3>
                     </div>
                 </div>  
             </main>
-            <h2>Categories</h2>
+            <h2 className="category-heading">Categories</h2>
         </div>
             <div className="categories">
                 <div className="card-set">
                     <div className="card-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/washing.jpg" alt="Washing-Photo" />
                             <h4>Washing</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Ironing.jpg" alt="Ironing-Photo" />
                             <h4>Ironing</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Folding.jpg" alt="Folding-Photo" />
                             <h4>Folding</h4>
                         </a>
@@ -76,37 +76,37 @@ const Home = () => {
                 <div className="card-set">
 
                     <div className="card-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Dry-cleaning.jpg" alt="Dry-cleaning-Photo" />
                             <h4>Dry cleaning</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Wash-fold.jpg" alt="Wash-Fold-Photo" />
                             <h4>Wash & Fold</h4>
                         </a>
                     </div>
                     <div className="card-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Wash-Iron.webp" alt="" />
                             <h4>Wash & Iron</h4>
                         </a>
                     </div>
                 </div>
             </div>
-            <h2>Service Types</h2>
+            <h2 className="category-heading">Service Types</h2>
             <div className="service-types">
                 <div className="reg-service">
-                    <h2>Regular</h2>
-                    <p>Reliable, scheduled laundry solutions for everyday convenience.</p>
+                    <h2 className="category-heading">Regular</h2>
+                    <p className="home-page-para">Reliable, scheduled laundry solutions for everyday convenience.</p>
                 </div>
                 <div className="urg-service">
-                    <h2>Urgent</h2>
-                    <p>Instant laundry care for when time is of the essence.</p>
+                    <h2 className="category-heading">Urgent</h2>
+                    <p className="home-page-para">Instant laundry care for when time is of the essence.</p>
                 </div>
             </div>
-            <h2>Pricing</h2>
+            <h2 className="category-heading">Pricing</h2>
 
             <div className="pricing">
 
@@ -114,7 +114,7 @@ const Home = () => {
                 <div className="pricing-set">
 
                     <div className="pricing-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Basic-package.png" alt="Basic-Pack-Photo" />
                         </a>    
                         <div className="overlay">
@@ -123,7 +123,7 @@ const Home = () => {
                     </div>
 
                     <div className="pricing-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Express-package.png" alt="Express-Package-Photo"/>
                         </a>
                         <div className="overlay">
@@ -132,7 +132,8 @@ const Home = () => {
                     </div>
 
                     <div className="pricing-set-c">
-                        <a href="#">
+
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Luxury-package.png" alt="Luxury-Package-Photo" />
                         </a>
                         <div className="overlay">
@@ -141,7 +142,7 @@ const Home = () => {
                     </div>
 
                     <div className="pricing-set-c">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Custom-package.png" alt="Custom-Package-Photo" />
                         </a>
                         <div className="overlay">
@@ -151,12 +152,12 @@ const Home = () => {
 
                 </div>
             </div>
-            <h2>Why Us?</h2>
+            <h2 className="category-heading">Why Us?</h2>
                 <div className="gradient-section-bottom">
                     <div className="testimonial">
                         <div className="testimonial-set">
                             <div className="testimonial-set-photo">
-                        <a href="#">
+                        <a className="home-page-a" href="#">
                             <img src="./src/assets/Testimonial-photo.png" alt="testimonial-photo" />
                         </a>    
                     </div>
@@ -199,9 +200,9 @@ const Home = () => {
             </div>
             <footer>
                 <div className="footer-social">
-                    <a href="#" target="_blank" className="fa fa-facebook"></a>
-                    <a href="#" target="_blank" className="fa fa-twitter"></a>
-                    <a href="#" target="_blank" className="fa fa-instagram"></a>
+                    <a className="home-page-a" href="#" target="_blank" className="fa fa-facebook"></a>
+                    <a className="home-page-a" href="#" target="_blank" className="fa fa-twitter"></a>
+                    <a className="home-page-a" href="#" target="_blank" className="fa fa-instagram"></a>
                     <br />
                     <br />
                 </div>
@@ -209,23 +210,23 @@ const Home = () => {
                 <div className="footer-nav">
 
                     <div className="footer-navbutton">
-                        <a href="#">Home</a>
+                        <a className="home-page-a" href="#">Home</a>
                     </div>
     
                     <div className="footer-navbutton">
-                        <a href="#">About Us</a>
+                        <a className="home-page-a" href="#">About Us</a>
                     </div>
                     
                     <div className="footer-navbutton">
-                        <a href="#">Services</a>
+                        <a className="home-page-a" href="#">Services</a>
                     </div>
     
                     <div className="footer-navbutton">
-                        <a href="#">Contact Us</a>
+                        <a className="home-page-a" href="#">Contact Us</a>
                     </div>
     
                     <div className="footer-navbutton">
-                        <a href="#">Login</a>
+                        <a className="home-page-a" href="#">Login</a>
                     </div>
                 </div>
 
