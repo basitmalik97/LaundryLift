@@ -1,0 +1,31 @@
+.navbutton {
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .contactusnavbutton {
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+  }
+  
+  .loginnavbutton {
+    background-color: rgba(39, 37, 89, 0.9);
+    border: 1px solid white;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .loginnavbutton:hover {
+    background-color: black;
+    transition-duration: 1s;
+  }
+
+  

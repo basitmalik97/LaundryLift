@@ -2,19 +2,8 @@
 // import Auth from '../../utils/auth';
 import './style.css'
 function Nav() {
-    // function renderNav() {
-    //     if (Auth.loggedIn()) {
-    //         return (
-    //             <h1> You are logged in! </h1>
-    //         )
-    //     } else {
-    //         return (
-    //             <h1> You need to Login to view this!</h1>
-    //         )
-    //     }
-    // }
 return (
-    <header>
+    <header className='bg-container'>
         <div className="logo">
             <a href="#">
                 <img src="./src/assets/Logo.png" alt="Logo" /> Laundry Lift

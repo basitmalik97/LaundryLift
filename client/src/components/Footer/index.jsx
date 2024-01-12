@@ -1,4 +1,8 @@
+import './style.css'
+
 function Footer() {
+
+return (
 <footer>
 <div className="footer-social">
     <a href="#" target="_blank" className="fa fa-facebook"></a>
@@ -34,7 +38,7 @@ function Footer() {
     All rights reserved - Copyright 2023©
 </div>
 </footer>   
-}
+)}
 
 export default Footer;
 
