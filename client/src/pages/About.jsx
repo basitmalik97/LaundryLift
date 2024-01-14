@@ -11,7 +11,7 @@ const About = () => {
           <article>
             <main>
               <h1 className="article-h1">About Us</h1>
-              <img src="./src/assets/tbd" width="200" height="200" />
+              <img src="./src/assets/About-Us-Image.png" width="200" />
 
               <br />
               <p>
