@@ -1,3 +1,6 @@
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+
 const slides = document.querySelectorAll('.sliding-div');
 let currentIndex = 0;
 console.log("Script2 is loaded");
@@ -27,7 +30,7 @@ const Home = () => {
     return (
 <body>
     <div className="bg-container" >
-        
+        <Nav />
         <div className="gradient-section" > 
         <div className="herobox1"> 
             <h1 className="home-page-heading">How we work</h1>
@@ -200,6 +203,7 @@ const Home = () => {
                 </form>
             </div>
         </div>
+        <Footer />
        </div>  
     </body>
     );
