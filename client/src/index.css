@@ -107,6 +107,7 @@ header {
   font-size: 1.5rem;
   font-family: 'Playfair Display', serif;
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 h4 {
@@ -127,9 +128,9 @@ h4 {
 /* Category Section */
 
 .categories {
-  height: 60vh;
-  width: 980px;
-  padding: 10px;
+  height: 600px;
+  width: 750px;
+  padding: 30px 30px;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -137,6 +138,9 @@ h4 {
   margin: 0 auto;
   margin-bottom: 150px;
   margin-top: 60px;
+  background-color: rgba(39, 37, 89, 0.9);
+  border-radius: 2%;
+
 }
 
 .card-set {
@@ -146,7 +150,6 @@ h4 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: rgba(39, 37, 89, 0.9);
   padding: 20px;
   position: relative;
 }
@@ -154,7 +157,6 @@ h4 {
 .card-set-c {
   height: 250px;
   width: 250px;
-  background-color: aquamarine;
   border-radius: 5%;
   margin: 2%;
   position: relative;
@@ -181,8 +183,8 @@ h4 {
 }
 
 .reg-service {
-  width: 25%;
-  height: 200px;
+  width: 30%;
+  height: 225px;
   background-color: rgba(30, 32, 44, 1);
   margin-right: 60px;
   text-align: center;
@@ -190,8 +192,8 @@ h4 {
 }
 
 .urg-service {
-  width: 25%;
-  height: 200px;
+  width: 30%;
+  height: 225px;
   background-color: rgba(30, 32, 44, 1);
   text-align: center;
   padding: 20px;
@@ -327,7 +329,7 @@ h4 {
   align-items: center;
   padding-bottom: 50px;
   padding-top: 50px;
-  height: 100px;
+  height: 200px;
   width: 400px;
   border-radius: 5%;
   margin: 20px;
@@ -453,22 +455,23 @@ h4 {
   
   }
   .input-box input::placeholder{
-      color: #fff;
-      
+      color: black;    
   }
+
   .login-wrapper .remember-forgot{
       display: flex;
       justify-content: space-between;
       font-size: 14.6px;
       margin: -15px 0 15px;
   } 
+
   .remember-forgot label input{
   margin-right: 3px;
   }
+
   .remember-forgot .checkbox-a{
-      color:#fff;
-      text-decoration: none;
-  
+    color: white;    
+    text-decoration: none;  
   }
   
   .remember-forgot a:hover{
@@ -489,6 +492,7 @@ h4 {
       cursor: pointer;
       font-size: 16px;
       font-weight: 550;
+      margin-top: 30px;
   }
   .register-link p a{
       color: #fff;
@@ -518,6 +522,7 @@ h4 {
     text-align: center;
     color: white;
     margin-bottom: 25px;
+    background-color: rgba(5, 7, 21, 1);
      }
      form input, form textarea{
       width:100%;
@@ -535,7 +540,7 @@ h4 {
     padding: 20px;
     border: none;
     border-radius: 25px;
-    background-color: #7a39a0;
+    background-color: rgba(78, 68, 180, 0.9);
     color: white;
     cursor: pointer;
     height: 150%; 
@@ -596,7 +601,7 @@ a {
 }
 
 .mybutton:hover {
-  background-color: rgb(29, 213, 103);
+  background-color: rgba(89, 86, 124, 0.9);
   transition-duration: 1s;
 }
 
@@ -604,6 +609,7 @@ a {
   min-height: 300px;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .herobox2,
@@ -613,10 +619,15 @@ a {
 .herobox6,
 .herobox7 {
   flex: 2;
-  padding-right: 100px;
+  padding-right: 50px;
   width: 350px;
   height: 300px;
   padding-top: 50px;
+  border: 2px solid #fff;
+  padding-top: 25px;
+  margin-right: 30px;
+  padding-left: 10px;
+
 }
 
 .herobox2-img,
@@ -637,8 +648,8 @@ a {
 .herobox6-img img,
 .herobox7-img img {
   width: 350px;
-  height: 250px;
-  padding-top: 40px;
+  height: 300px;
+  border: 2px solid #fff;
 }
 
 h2 {
@@ -669,7 +680,8 @@ background-position: center;
     min-height: 100vh;
     width: 100%;
     background-position: center;
-   background-size: cover;
+    background-size: cover;
+    margin-bottom: 200px;
 }
 
 
@@ -685,4 +697,9 @@ background-position: center;
   padding-top: 5rem;
   text-align: center;
   justify-content: center;
+}
+
+.about-us-main {
+  width: 700px;
+  text-align: left;
 }

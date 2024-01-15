@@ -30,8 +30,9 @@ const Home = () => {
     return (
 <body>
     <div className="bg-container" >
-        <Nav />
+        
         <div className="gradient-section" > 
+        <Nav />
         <div className="herobox1"> 
             <h1 className="home-page-heading">How we work</h1>
               <p className="home-page-para">Experience seamless laundry care in four simple steps: <br /> order online, enjoy convenient pick-up, trust our expert <br />
@@ -159,8 +160,8 @@ const Home = () => {
             <h2 className="category-heading">Why Us?</h2>
                 <div className="gradient-section-bottom">
                     <div className="testimonial">
-                        <div className="testimonial-set">
-                            <div className="testimonial-set-photo">
+                <div className="testimonial-set">
+                    <div className="testimonial-set-photo">
                         <a className="home-page-a" href="#">
                             <img src="./src/assets/Testimonial-photo.png" alt="testimonial-photo" />
                         </a>    
@@ -202,8 +203,9 @@ const Home = () => {
                   <button type="submit" className="btn-subscribe">Subscribe</button>
                 </form>
             </div>
+            <Footer />
+
         </div>
-        <Footer />
        </div>  
     </body>
     );
