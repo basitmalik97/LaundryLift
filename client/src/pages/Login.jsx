@@ -1,26 +1,22 @@
 import { useState } from "react";
-import { useMutation } from '@apollo/client';
-import { LOGIN } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import { LOGIN } from "../utils/mutations";
 
 import Footer from "../components/Footer";
 
-import Auth from '../utils/auth';
-
-
-
+import Auth from "../utils/auth";
 
 function Login(props) {
-
-  const [formState, setFormState] = useState({ email: '', password: ''});
-  const [login, { error }] = useMutation(LOGIN)
+  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [loginUser, { error }] = useMutation(LOGIN);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      const mutationResponse = await login({
+      const mutationResponse = await loginUser({
         variables: { email: formState.email, password: formState.password },
       });
-      const token = mutationResponse.data.login.token;
+      const token = mutationResponse.data.loginUser.token;
       Auth.login(token);
     } catch (e) {
       console.log(e);
@@ -35,19 +31,34 @@ function Login(props) {
     });
   };
 
-
   return (
-    <div className="gradient-section">
-      <body className="login-body">
+    <body className="gradient-section">
+      <div className="login-body">
         <div className="login-wrapper">
           <form className="login-form" onSubmit={handleFormSubmit}>
             <h1>Login</h1>
             <div className="input-box">
-              <input className="login-input" type="text" placeholder="Username" required onChange={handleChange} />
+              <input
+                className="login-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                onChange={handleChange}
+              />
             </div>
 
             <div className="input-box">
-              <input className="login-input" type="password" placeholder="Password" required onChange={handleChange} />
+              <input
+                className="login-input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+                onChange={handleChange}
+              />
             </div>
 
             <div className="remember-forgot">
@@ -76,9 +87,9 @@ function Login(props) {
             ) : null}
           </form>
         </div>
-      </body>
+      </div>
       <Footer />
-    </div>
+    </body>
   );
 }
 export default Login;

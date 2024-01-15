@@ -1,36 +1,28 @@
 import { useState } from "react";
-import { useMutation } from '@apollo/client';
-import { REGISTER_USER } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import { REGISTER_USER } from "../utils/mutations";
 
 import Footer from "../components/Footer";
 
-import Auth from '../utils/auth';
-
-
-
+import Auth from "../utils/auth";
 
 function Signup(props) {
-
-  const [formState, setFormState] = useState({ email: '', password: ''});
-  const [registerUser] = useMutation(REGISTER_USER)
+  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [registerUser] = useMutation(REGISTER_USER);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    try {
-      const mutationResponse = await registerUser({
-        variables: { 
-            firstName: formState.firstName,
-            lastName: formState.lastName,
-            address: formState.address,
-            email: formState.email, 
-            password: formState.password
-             },
-      });
-      const token = mutationResponse.data.addUser.token;
-      Auth.login(token);
-    } catch (e) {
-      console.log(e);
-    }
+    const mutationResponse = await registerUser({
+      variables: {
+        firstName: formState.firstName,
+        lastName: formState.lastName,
+        address: formState.address,
+        email: formState.email,
+        password: formState.password,
+      },
+    });
+    const token = mutationResponse.data.registerUser.token;
+    Auth.login(token);
   };
 
   const handleChange = (event) => {
@@ -41,35 +33,72 @@ function Signup(props) {
     });
   };
 
-
   return (
-    <div className="gradient-section">
-      <body className="login-body">
+    <body className="login-body ">
+      <div className="gradient-section">
         <div className="login-wrapper">
           <form onSubmit={handleFormSubmit}>
             <h1>Create an Account</h1>
             <div className="input-box">
-              <input type="text" placeholder="First Name" required onChange={handleChange} />
+              <input
+                type="firstName"
+                name="firstName"
+                id="firstName"
+                placeholder="First Name"
+                required
+                onChange={handleChange}
+              />
             </div>
             <div className="input-box">
-              <input type="text" placeholder="Last Name" required onChange={handleChange} />
+              <input
+                type="lastName"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+                required
+                onChange={handleChange}
+              />
             </div>
             <div className="input-box">
-              <input type="text" placeholder="Address" required onChange={handleChange} />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-box">
+              <input
+                type="address"
+                name="address"
+                id="address"
+                placeholder="Address"
+                required
+                onChange={handleChange}
+              />
             </div>
 
             <div className="input-box">
-              <input type="password" placeholder="Password" required onChange={handleChange} />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+                onChange={handleChange}
+              />
             </div>
 
             <button type="submit" className="btn">
-              Login
+              Create Account
             </button>
           </form>
         </div>
-      </body>
+      </div>
       <Footer />
-    </div>
+    </body>
   );
 }
 export default Signup;
