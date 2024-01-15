@@ -10,6 +10,7 @@ import Login from './pages/Login.jsx';
 import Services from './pages/Services.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Contact from './pages/Contact.jsx';
+import Signup from './pages/Signup.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,9 @@ const router = createBrowserRouter([
       }, {
         path: '/contact',
         element: <Contact />
+      }, {
+        path: '/signup',
+        element: <Signup />
       }
     ]
   }
