@@ -9,17 +9,15 @@ const About = () => {
       <div className="wrapper-about">
         <div className="testimonial">
           <article>
-            <main>
-              <h1 className="article-h1">About Us</h1>
-              <img src="./src/assets/About-Us-Image.png" width="200" />
-
+          <h1 className="article-h1">About Us</h1>
+          <img src="./src/assets/About-Us-Image.png" width="200" />
+            <main className="about-us-main">
+              
               <br />
               <p>
-                Welcome to Laundry Lift, where we take care of your garments
-                with precision and care. Our seamless laundry process is
-                designed to make your life easier, offering a hassle-free
-                experience from start to finish. Explore our range of services
-                below:
+                Welcome to Laundry Lift, your dedicated partner in garment care. At Laundry Lift, we approach the task of caring for your clothing with precision and utmost attention. Our seamless laundry process is meticulously designed to simplify your life, providing you with a hassle-free experience from initiation to completion. Discover more about us and our commitment to excellence below:
+
+
               </p>
               <br />
               <p>

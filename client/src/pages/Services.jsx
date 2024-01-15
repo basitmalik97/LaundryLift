@@ -82,11 +82,7 @@ const Services = () => {
                         <div className="herobox5">
         
                             <h2>Dry cleaning</h2>
-                            <p>For delicate fabrics and garments with special care requirements, our dry cleaning service is the
-                                solution. Using
-                                industry-leading techniques and eco-friendly solvents, we gently clean and refresh your items,
-                                preserving their
-                                quality and extending their lifespan.</p> <br />
+                            <p>For delicate fabrics and garments requiring special care, our dry cleaning service is the answer. Using industry-leading techniques and eco-friendly solvents, we gently clean and refresh your items, preserving their quality and extending their lifespan.</p> <br />
                             <a href="test-page.html" className="mybutton">Book Now</a>
                         </div>
         
@@ -101,13 +97,7 @@ const Services = () => {
                         <div className="herobox6">
         
                             <h2>Wash & Fold</h2>
-                            <p>Enjoy the perfect combination of convenience and quality with our Wash & Fold service. Simply
-                                drop off your laundry,
-                                and our expert team will take care of the rest. Your clothes will be washed, dried, and expertly
-                                folded, ready for
-                                you to pick up or have delivered to your doorstep. Experience the ultimate time-saving solution
-                                for your busy
-                                lifestyle.</p> <br />
+                            <p>Discover the perfect blend of convenience and quality with our Wash & Fold service. Simply drop off your laundry, and our expert team will handle the rest. Your clothes will be washed, dried, and expertly folded, providing you with a time-saving solution for your busy lifestyle.</p> <br />
                             <a href="test-page.html" className="mybutton">Book Now</a>
                         </div>
         
@@ -120,13 +110,9 @@ const Services = () => {
                     <div className="service-section">
         
                         <div className="herobox7">
-        
+
                             <h2>Wash & Iron</h2>
-                            <p>For a hassle-free laundry routine, try our Wash & Iron service. We go the extra mile by not only
-                                washing your clothes
-                                with precision but also ensuring they are professionally ironed to perfection. Whether it&#39;s your
-                                everyday essentials
-                                or special garments, our team ensures that your clothes look impeccable and ready to wear.</p>
+                            <p>Experience hassle-free laundry with our Wash & Iron service. We not only wash your clothes with precision but also ensure they are professionally ironed to perfection. From everyday essentials to special garments, our team guarantees impeccable and ready-to-wear clothes.</p>
                             <br />
                             <a href="test-page.html" className="mybutton">Book Now</a>
                         </div>
