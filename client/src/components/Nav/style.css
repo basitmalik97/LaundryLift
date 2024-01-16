@@ -37,6 +37,43 @@
     transition-duration: 1s;
   }
 
+ /* Add styles for burger menu */
+.burger-menu {
+  display: none; /* Initially hide the burger menu */
+  cursor: pointer;
+}
+
+/* Styles for burger menu bars */
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  nav {
+    display: none; /* Hide the navigation by default on small screens */
+  }
+
+  .burger-menu {
+    display: block; /* Show the burger menu button on small screens */
+  }
+
+  /* Show the navigation when the burger menu is open */
+  nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(39, 37, 89, 0.9);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+}
 .navbar {
   display: flex;
 }

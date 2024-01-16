@@ -13,9 +13,8 @@ const About = () => {
           <img src="./src/assets/About-Us-Image.png" width="200" />
             <main className="about-us-main">
               
-              <br />
               <p>
-                Welcome to Laundry Lift, your dedicated partner in garment care. At Laundry Lift, we approach the task of caring for your clothing with precision and utmost attention. Our seamless laundry process is meticulously designed to simplify your life, providing you with a hassle-free experience from initiation to completion. Discover more about us and our commitment to excellence below:
+              Welcome to Laundry Lift, your dedicated partner in garment care. At Laundry Lift, we approach the task of caring for your clothing with precision and utmost attention. Our seamless laundry process is meticulously designed to simplify your life, providing you with a hassle-free experience from initiation to completion. Discover more about us and our commitment to excellence below:
 
 
               </p>
@@ -41,7 +40,7 @@ const About = () => {
                 detergents, and industry-leading techniques to ensure your
                 garments receive the treatment they deserve.
               </p>
-              <div></div>
+
 
               <p>
                 4. Hassle-Free Delivery Sit back and relax as we bring your
@@ -52,7 +51,6 @@ const About = () => {
               </p>
               <br />
 
-              <div></div>
               <p>
                 At Laundry Lift, we understand the importance of clean,
                 well-maintained clothing. Our services are tailored to meet your
@@ -62,9 +60,6 @@ const About = () => {
               </p>
               <br />
 
-              <div>
-                <br />
-              </div>
             </main>
           </article>
         </div>
