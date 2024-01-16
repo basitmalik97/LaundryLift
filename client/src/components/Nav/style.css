@@ -22,10 +22,21 @@
     position: relative;
     border-radius: 10px;
   }
+  .logoutnavbutton {
+    background-color: rgba(39, 37, 89, 0.9);
+    border: 1px solid white;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+  }
   
   .loginnavbutton:hover {
     background-color: rgba(108, 93, 189, 0.771);
     transition-duration: 1s;
   }
 
-  
+.navbar {
+  display: flex;
+}
