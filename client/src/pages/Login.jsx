@@ -1,18 +1,64 @@
+import { useState } from "react";
+import { useMutation } from "@apollo/client";
+import { LOGIN } from "../utils/mutations";
+
 import Footer from "../components/Footer";
 
-const Login = () => {
+import Auth from "../utils/auth";
+
+function Login(props) {
+  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [loginUser, { error }] = useMutation(LOGIN);
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const mutationResponse = await loginUser({
+        variables: { email: formState.email, password: formState.password },
+      });
+      const token = mutationResponse.data.loginUser.token;
+      Auth.login(token);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+
   return (
-    <div className="gradient-section">
-      <body className="login-body">
+    <body className="gradient-section">
+      <div className="login-body">
         <div className="login-wrapper">
-          <form action="">
+          <form className="login-form" onSubmit={handleFormSubmit}>
             <h1>Login</h1>
             <div className="input-box">
-              <input type="text" placeholder="Username" required />
+              <input
+                className="login-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                onChange={handleChange}
+              />
             </div>
 
             <div className="input-box">
-              <input type="password" placeholder="Password" required />
+              <input
+                className="login-input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+                onChange={handleChange}
+              />
             </div>
 
             <div className="remember-forgot">
@@ -31,14 +77,19 @@ const Login = () => {
 
             <div className="register-link">
               <p>
-                Don&#39;t have an account? <a href="#">Register</a>{" "}
+                Don&#39;t have an account? <a href="/signup">Register</a>{" "}
               </p>
             </div>
+            {error ? (
+              <div>
+                <p>The login was unsuccessful. Please try again.</p>
+              </div>
+            ) : null}
           </form>
         </div>
-      </body>
+      </div>
       <Footer />
-    </div>
+    </body>
   );
-};
+}
 export default Login;

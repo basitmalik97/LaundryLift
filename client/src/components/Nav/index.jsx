@@ -40,6 +40,7 @@
 
 
 //import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 // import Auth from '../../utils/auth';
 import React, { useState } from 'react'; // Import React and useState
 import './style.css';
@@ -55,13 +56,51 @@ function Nav() {
 
   return (
     <header className='bg-container'>
+=======
+import Auth from "../../utils/auth";
+import "./style.css";
+
+function Nav() {
+
+  function showNav() {
+    if (Auth.loggedIn()) {
+      return (
+        <ul>
+          <li className="logoutnavbutton">
+            <a href="/" onClick={() => Auth.logout()}>
+              Logout
+            </a>
+          </li>
+        </ul>
+      );
+    } else {
+      return (
+        <ul>
+          <li className="loginnavbutton">
+            <a href="/signup">Signup</a>
+          </li>
+          <li className="loginnavbutton">
+            <a href="/login">Login</a>
+          </li>
+        </ul>
+      );
+    }
+  }
+
+  return (
+    <header className="bg-container">
+>>>>>>> 7fa2a9fcb485a9526533ac59993735be730271e7
       <div className="logo">
         <a href="#">
           <img src="./src/assets/Logo.png" alt="Logo" /> Laundry Lift
         </a>
       </div>
+<<<<<<< HEAD
       {/* Use the burgerMenuOpen state to conditionally render the navigation */}
       <nav className={burgerMenuOpen ? 'open' : ''}>
+=======
+      <nav className="navbar">
+>>>>>>> 7fa2a9fcb485a9526533ac59993735be730271e7
         <div className="navbutton">
           <a href="/home">Home</a>
         </div>
@@ -77,6 +116,7 @@ function Nav() {
         <div className="contactusnavbutton">
           <a href="/contact">Contact Us</a>
         </div>
+<<<<<<< HEAD
 
         <div className="loginnavbutton">
           <a href="/login">Login</a>
@@ -88,6 +128,10 @@ function Nav() {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
+=======
+        {showNav()}
+      </nav>
+>>>>>>> 7fa2a9fcb485a9526533ac59993735be730271e7
     </header>
   );
 }
