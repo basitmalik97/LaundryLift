@@ -37,9 +37,6 @@
     transition-duration: 1s;
   }
 
-<<<<<<< HEAD
-
-
  /* Add styles for burger menu */
 .burger-menu {
   display: none; /* Initially hide the burger menu */
@@ -77,8 +74,6 @@
     width: 100%;
   }
 }
-=======
 .navbar {
   display: flex;
 }
->>>>>>> 7fa2a9fcb485a9526533ac59993735be730271e7

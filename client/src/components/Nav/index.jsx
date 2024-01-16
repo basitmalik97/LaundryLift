@@ -40,9 +40,12 @@
 
 
 //import { Link } from 'react-router-dom';
+
 // import Auth from '../../utils/auth';
 import React, { useState } from 'react'; // Import React and useState
-import './style.css';
+import Auth from "../../utils/auth";
+import "./style.css";
+
 
 function Nav() {
   // Use useState to manage the state of the burger menu
@@ -55,11 +58,6 @@ function Nav() {
 
   return (
     <header className='bg-container'>
-import Auth from "../../utils/auth";
-import "./style.css";
-
-function Nav() {
-
   function showNav() {
     if (Auth.loggedIn()) {
       return (
@@ -94,6 +92,7 @@ function Nav() {
       </div>
       {/* Use the burgerMenuOpen state to conditionally render the navigation */}
       <nav className={burgerMenuOpen ? 'open' : ''}>
+
         <div className="navbutton">
           <a href="/home">Home</a>
         </div>
@@ -113,7 +112,6 @@ function Nav() {
         <div className="loginnavbutton">
           <a href="/login">Login</a>
         </div>
-      </nav>
       {/* Burger menu button */}
       <div className="burger-menu" onClick={toggleBurgerMenu}>
         <div className="bar"></div>
