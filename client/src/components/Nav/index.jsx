@@ -42,7 +42,7 @@
 //import { Link } from 'react-router-dom';
 
 // import Auth from '../../utils/auth';
-import React, { useState } from 'react'; // Import React and useState
+import { useState } from 'react'; // Import React and useState
 import Auth from "../../utils/auth";
 import "./style.css";
 
@@ -56,10 +56,8 @@ function Nav() {
     setBurgerMenuOpen(!burgerMenuOpen);
   };
 
-  return (
-    <header className='bg-container'>
   function showNav() {
-    if (Auth.loggedIn()) {
+    if (Auth.loggedIn())  {
       return (
         <ul>
           <li className="logoutnavbutton">
@@ -82,7 +80,6 @@ function Nav() {
       );
     }
   }
-
   return (
     <header className="bg-container">
       <div className="logo">
@@ -91,7 +88,7 @@ function Nav() {
         </a>
       </div>
       {/* Use the burgerMenuOpen state to conditionally render the navigation */}
-      <nav className={burgerMenuOpen ? 'open' : ''}>
+      <nav className= {burgerMenuOpen ? 'open' : 'navbar'}>
 
         <div className="navbutton">
           <a href="/home">Home</a>
@@ -108,10 +105,6 @@ function Nav() {
         <div className="contactusnavbutton">
           <a href="/contact">Contact Us</a>
         </div>
-
-        <div className="loginnavbutton">
-          <a href="/login">Login</a>
-        </div>
       {/* Burger menu button */}
       <div className="burger-menu" onClick={toggleBurgerMenu}>
         <div className="bar"></div>
@@ -123,5 +116,4 @@ function Nav() {
     </header>
   );
 }
-
 export default Nav;

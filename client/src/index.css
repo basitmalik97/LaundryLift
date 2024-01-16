@@ -1221,6 +1221,38 @@ h2 {
       margin: 0 auto;
       box-sizing: border-box;
   }
-  
-  
+}
+
+.cart-container {
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+}
+.services {
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.cart-input {
+  display: inline-block;
+
+}
+
+.signup-body{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+.signup-wrapper{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background-color: transparent;
+}
+.signup-input{
+  color: white;
+}
 

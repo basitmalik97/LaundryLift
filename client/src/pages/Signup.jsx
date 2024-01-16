@@ -34,13 +34,13 @@ function Signup(props) {
   };
 
   return (
-    <body className="login-body ">
+    <body className="">
       <div className="gradient-section">
-        <div className="login-wrapper">
+        <div className="signup-wrapper">
           <form onSubmit={handleFormSubmit}>
             <h1>Create an Account</h1>
             <div className="input-box">
-              <input
+              <input className="login-input"
                 type="firstName"
                 name="firstName"
                 id="firstName"
@@ -96,8 +96,9 @@ function Signup(props) {
             </button>
           </form>
         </div>
+        <Footer />
       </div>
-      <Footer />
+
     </body>
   );
 }
