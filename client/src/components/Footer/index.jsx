@@ -13,23 +13,23 @@ function Footer() {
 
       <div className="footer-nav">
         <div className="footer-navbutton">
-          <a href="#">Home</a>
+          <a href="/home">Home</a>
         </div>
 
         <div className="footer-navbutton">
-          <a href="#">About Us</a>
+          <a href="/about">About Us</a>
         </div>
 
         <div className="footer-navbutton">
-          <a href="#">Services</a>
+          <a href="/services">Services</a>
         </div>
 
         <div className="footer-navbutton">
-          <a href="#">Contact Us</a>
+          <a href="/contact">Contact Us</a>
         </div>
 
         <div className="footer-navbutton">
-          <a href="#">Login</a>
+          <a href="login">Login</a>
         </div>
       </div>
       <div className="footer-bottom">All rights reserved - Copyright 2023©</div>
