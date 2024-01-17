@@ -58,6 +58,10 @@
     display: none; /* Hide the navigation by default on small screens */
   }
 
+  .nav-buttons {
+    display: none;
+  }
+
   .burger-menu {
     display: block; /* Show the burger menu button on small screens */
   }
