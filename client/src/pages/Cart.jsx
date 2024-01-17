@@ -1,11 +1,12 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Auth from "../utils/auth"
 
-const Cart = () => {
-  return (
-    <body className="gradient-section">
-      <Nav />
-      <div className="cart-container">
+function Cart() {
+    function renderCart() {
+      if (Auth.loggedIn()) {
+        return (
+<div className="cart-container">
         <div className="services">
         <h1>Cart</h1>
           <h3>Services:</h3>
@@ -27,8 +28,21 @@ const Cart = () => {
         </div>
 
       </div>
-      <Footer />
-    </body>
-  );
-};
+        );
+      } else {
+        return (
+ <h1>Must be signed in to checkout!</h1>
+          );
+        }
+       }
+        return(
+          <body className="gradient-section">
+          <Nav />
+          <div className="cart-warning">
+          {renderCart()}
+          </div>
+          <Footer />
+        </body>
+      );
+    }
 export default Cart;
