@@ -67,19 +67,19 @@ const Home = () => {
         <div className="categories">
           <div className="card-set">
             <div className="card-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img src="./src/assets/washing.jpg" alt="Washing-Photo" />
                 <h4>Washing</h4>
               </a>
             </div>
             <div className="card-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img src="./src/assets/Ironing.jpg" alt="Ironing-Photo" />
                 <h4>Ironing</h4>
               </a>
             </div>
             <div className="card-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img src="./src/assets/Folding.jpg" alt="Folding-Photo" />
                 <h4>Folding</h4>
               </a>
@@ -88,7 +88,7 @@ const Home = () => {
 
           <div className="card-set">
             <div className="card-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img
                   src="./src/assets/Dry-cleaning.jpg"
                   alt="Dry-cleaning-Photo"
@@ -97,13 +97,13 @@ const Home = () => {
               </a>
             </div>
             <div className="card-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img src="./src/assets/Wash-fold.jpg" alt="Wash-Fold-Photo" />
                 <h4>Wash & Fold</h4>
               </a>
             </div>
             <div className="card-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img src="./src/assets/Wash-Iron.webp" alt="" />
                 <h4>Wash & Iron</h4>
               </a>
@@ -130,50 +130,50 @@ const Home = () => {
         <div className="pricing">
           <div className="pricing-set">
             <div className="pricing-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img
                   src="./src/assets/Basic-package.png"
                   alt="Basic-Pack-Photo"
                 />
               </a>
               <div className="overlay">
-                <button className="get-started-button">Get Started</button>
+                <a href="/services" className="get-started-button">Get Started</a>
               </div>
             </div>
 
             <div className="pricing-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img
                   src="./src/assets/Express-package.png"
                   alt="Express-Package-Photo"
                 />
               </a>
               <div className="overlay">
-                <button className="get-started-button">Get Started</button>
+                <a href="/services" className="get-started-button">Get Started</a>
               </div>
             </div>
 
             <div className="pricing-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img
                   src="./src/assets/Luxury-package.png"
                   alt="Luxury-Package-Photo"
                 />
               </a>
               <div className="overlay">
-                <button className="get-started-button">Get Started</button>
+                <a href="/services" className="get-started-button">Get Started</a>
               </div>
             </div>
 
             <div className="pricing-set-c">
-              <a className="home-page-a" href="#">
+              <a className="home-page-a" href="/services">
                 <img
                   src="./src/assets/Custom-package.png"
                   alt="Custom-Package-Photo"
                 />
               </a>
               <div className="overlay">
-                <button className="get-started-button">Get Started</button>
+                <a href="/services" className="get-started-button">Get Started</a>
               </div>
             </div>
           </div>
