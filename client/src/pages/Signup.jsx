@@ -37,12 +37,25 @@ function Signup(props) {
   return (
     <body className="gradient-section">
       <Nav />
-      <div className="">
-        <div className="signup-wrapper">
-          <form onSubmit={handleFormSubmit}>
-            <h1>Create an Account</h1>
+      <div className="login-body">
+        <div className="login-wrapper">
+          <form className="login-form" onSubmit={handleFormSubmit}>
+            <h1>Create an Account</h1>          
             <div className="input-box">
-              <input className="login-input"
+              <input
+                className="login-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="input-box">
+              <input
+                className="login-input"
                 type="firstName"
                 name="firstName"
                 id="firstName"
@@ -53,6 +66,7 @@ function Signup(props) {
             </div>
             <div className="input-box">
               <input
+                className="login-input"
                 type="lastName"
                 name="lastName"
                 id="lastName"
@@ -63,16 +77,7 @@ function Signup(props) {
             </div>
             <div className="input-box">
               <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                required
-                onChange={handleChange}
-              />
-            </div>
-            <div className="input-box">
-              <input
+                className="login-input"
                 type="address"
                 name="address"
                 id="address"
@@ -81,9 +86,9 @@ function Signup(props) {
                 onChange={handleChange}
               />
             </div>
-
             <div className="input-box">
               <input
+                className="login-input"
                 type="password"
                 name="password"
                 id="password"
@@ -93,14 +98,20 @@ function Signup(props) {
               />
             </div>
 
+            <div className="remember-forgot">
+              <label>
+                <input type="checkbox" />
+                Remember me
+              </label>
+            </div>
+
             <button type="submit" className="btn">
-              Create Account
+              Login
             </button>
           </form>
         </div>
-        <Footer />
       </div>
-
+      <Footer />
     </body>
   );
 }

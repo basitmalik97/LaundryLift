@@ -1243,17 +1243,22 @@ h2 {
   align-items: center;
   display: flex;
   min-height: 100vh;
+  background: url(bubble.jpeg) no-repeat;
+  background-size: cover;
 }
 
-.signup-wrapper{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: #fff;
-  background-color: transparent;
+.signup-form .signup-input {
+  width:100%;
+  padding: 20px;
+  display: block;
+  margin-bottom: 10px; 
+  border-radius: 25px;
+  background-color: rgb(243, 237, 237);
+  height: 110%;
+
 }
 .signup-input{
-  color: white;
+  color: transparent;
 }
 .cart-warning {
   display: flex;
