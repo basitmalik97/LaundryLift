@@ -3,6 +3,7 @@ import { useMutation } from "@apollo/client";
 import { REGISTER_USER } from "../utils/mutations";
 
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 import Auth from "../utils/auth";
 
@@ -34,8 +35,9 @@ function Signup(props) {
   };
 
   return (
-    <body className="">
-      <div className="gradient-section">
+    <body className="gradient-section">
+      <Nav />
+      <div className="">
         <div className="signup-wrapper">
           <form onSubmit={handleFormSubmit}>
             <h1>Create an Account</h1>

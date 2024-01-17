@@ -67,7 +67,7 @@ function Nav() {
     } else {
       return (
         <span>
-        <div className="loginnavbutton nav-buttons">
+        <div className="signinnavbutton nav-buttons">
           <a href="/signup">
             Signup
           </a>
