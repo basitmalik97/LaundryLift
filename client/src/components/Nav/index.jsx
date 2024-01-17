@@ -60,7 +60,7 @@ function Nav() {
     if (Auth.loggedIn())  {
       return (
         <ul>
-          <li className="logoutnavbutton">
+          <li className="logoutnavbutton nav-buttons">
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
@@ -70,10 +70,10 @@ function Nav() {
     } else {
       return (
         <ul>
-          <li className="loginnavbutton">
+          <li className="loginnavbutton nav-buttons">
             <a href="/signup">Signup</a>
           </li>
-          <li className="loginnavbutton">
+          <li className="loginnavbutton nav-buttons">
             <a href="/login">Login</a>
           </li>
         </ul>
