@@ -1255,4 +1255,8 @@ h2 {
 .signup-input{
   color: white;
 }
-
+.cart-warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
