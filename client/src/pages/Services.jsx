@@ -29,7 +29,7 @@ const Services = () => {
                 impurities, leaving your garments fresh and vibrant.
               </p>{" "}
               <br />
-              <a href="test-page.html" className="mybutton">
+              <a href="/cart" className="mybutton">
                 Book Now
               </a>
             </div>
@@ -49,7 +49,7 @@ const Services = () => {
                 placed back into your wardrobe with precision.
               </p>{" "}
               <br />
-              <a href="test-page.html" className="mybutton">
+              <a href="/cart" className="mybutton">
                 Book Now
               </a>
             </div>
@@ -70,7 +70,7 @@ const Services = () => {
                 look.
               </p>{" "}
               <br />
-              <a href="test-page.html" className="mybutton">
+              <a href="/cart" className="mybutton">
                 Book Now
               </a>
             </div>
@@ -91,7 +91,7 @@ const Services = () => {
                 lifespan.
               </p>{" "}
               <br />
-              <a href="test-page.html" className="mybutton">
+              <a href="/cart" className="mybutton">
                 Book Now
               </a>
             </div>
@@ -115,7 +115,7 @@ const Services = () => {
                 solution for your busy lifestyle.
               </p>{" "}
               <br />
-              <a href="test-page.html" className="mybutton">
+              <a href="/cart" className="mybutton">
                 Book Now
               </a>
             </div>
@@ -139,7 +139,7 @@ const Services = () => {
                 and ready-to-wear clothes.
               </p>
               <br />
-              <a href="test-page.html" className="mybutton">
+              <a href="/cart" className="mybutton">
                 Book Now
               </a>
             </div>

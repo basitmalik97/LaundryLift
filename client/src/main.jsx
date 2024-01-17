@@ -11,6 +11,7 @@ import Services from './pages/Services.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Contact from './pages/Contact.jsx';
 import Signup from './pages/Signup.jsx';
+import Cart from './pages/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,9 @@ const router = createBrowserRouter([
       }, {
         path: '/signup',
         element: <Signup />
+      }, {
+        path: '/cart',
+        element: <Cart />
       }
     ]
   }
