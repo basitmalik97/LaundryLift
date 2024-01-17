@@ -56,13 +56,13 @@ function Nav() {
   function showNav() {
     if (Auth.loggedIn()) {
       return (
-        <ul>
-          <li className="logoutnavbutton nav-buttons">
+        <span>
+          <div className="logoutnavbutton nav-buttons">
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
-          </li>
-        </ul>
+          </div>
+        </span>
       );
     } else {
       return (

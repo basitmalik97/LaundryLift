@@ -1227,15 +1227,41 @@ h2 {
   justify-content: center;
   margin: 0 auto;
   display: flex;
+  width: 40%;
 }
 .services {
+  margin: 2rem;
   margin-top: 4rem;
   justify-content: center;
+  padding: 2rem;
+  outline: auto;
+}
+
+.services h1 {
+  justify-content: center;
+  display: flex;
+}
+.services h3{
+  justify-content: center;
+  display: flex;
+  text-decoration: underline;
+}
+.service-item {
+  margin-top: 1rem;
+}
+
+.quantity-input {
+  margin: 1rem;
+  max-width: 15%;
 }
 
 .cart-input {
   display: inline-block;
-
+  margin-left: 1rem;
+}
+.cart-button {
+  display: flex;
+  justify-content: center;
 }
 
 .signup-body{
@@ -1264,4 +1290,17 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cart-wrapper {
+  outline: black;
+  border: black;
+}
+.success-msg h1 {
+  display: flex;
+  justify-content: center;
+}
+.success-msg p {
+  display: flex;
+  justify-content: center;
 }
