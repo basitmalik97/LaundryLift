@@ -13,11 +13,11 @@
 //             <div className="navbutton">
 //                 <a href="/home">Home</a>
 //             </div>
-    
+
 //             <div className="navbutton">
 //                 <a href="/about">About Us</a>
 //             </div>
-                    
+
 //             <div className="navbutton">
 //                 <a href="/services">Services</a>
 //             </div>
@@ -28,7 +28,7 @@
 
 //             <div className="loginnavbutton">
 //                 <a href="/login">Login</a>
-//             </div>   
+//             </div>
 //         </nav>
 //     </header>
 
@@ -37,15 +37,12 @@
 
 // export default Nav
 
-
-
 //import { Link } from 'react-router-dom';
 
 // import Auth from '../../utils/auth';
-import { useState } from 'react'; // Import React and useState
+import { useState } from "react"; // Import React and useState
 import Auth from "../../utils/auth";
 import "./style.css";
-
 
 function Nav() {
   // Use useState to manage the state of the burger menu
@@ -57,7 +54,7 @@ function Nav() {
   };
 
   function showNav() {
-    if (Auth.loggedIn())  {
+    if (Auth.loggedIn()) {
       return (
         <ul>
           <li className="logoutnavbutton nav-buttons">
@@ -69,14 +66,18 @@ function Nav() {
       );
     } else {
       return (
-        <ul>
-          <li className="loginnavbutton nav-buttons">
-            <a href="/signup">Signup</a>
-          </li>
-          <li className="loginnavbutton nav-buttons">
-            <a href="/login">Login</a>
-          </li>
-        </ul>
+        <span>
+        <div className="loginnavbutton nav-buttons">
+          <a href="/signup">
+            Signup
+          </a>
+          </div>
+          <div className="loginnavbutton nav-buttons">
+          <a href="/login">
+            Login
+          </a>  
+        </div>
+        </span>
       );
     }
   }
@@ -88,8 +89,7 @@ function Nav() {
         </a>
       </div>
       {/* Use the burgerMenuOpen state to conditionally render the navigation */}
-      <nav className= {burgerMenuOpen ? 'open' : 'navbar'}>
-
+      <nav className={burgerMenuOpen ? "open" : ""}>
         <div className="navbutton">
           <a href="/home">Home</a>
         </div>
@@ -105,14 +105,15 @@ function Nav() {
         <div className="contactusnavbutton">
           <a href="/contact">Contact Us</a>
         </div>
-      {/* Burger menu button */}
+        {/* Burger menu button */}
+
+        {showNav()}
+      </nav>
       <div className="burger-menu" onClick={toggleBurgerMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-        {showNav()}
-      </nav>
     </header>
   );
 }
