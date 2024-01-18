@@ -12,11 +12,11 @@ At Laundry Lift, we understand the importance of clean, well-maintained clothing
 
 ## Screenshots
 
-[![Screenshot 1](screenshots/screenshot1.png)](screenshots/screenshot1_large.png)
-*Caption for Screenshot 1*
+[![Screenshot 1](Homepage-Screenshot-1.png)
 
-[![Screenshot 2](screenshots/screenshot2.png)](screenshots/screenshot2_large.png)
-*Caption for Screenshot 2*
+
+[![Screenshot 2](Homepage-Screenshot-2.png)
+
 
 ## Contributors
 
