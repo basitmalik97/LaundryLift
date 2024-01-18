@@ -21,7 +21,7 @@ const startApolloServer = async () => {
   app.use(express.urlencoded({ extended: false }));
   app.use(express.json());
 
-  // Serve up static the static assests
+  // Serve up static the static assets
   app.use('/images', express.static(path.join(__dirname, '../client/images')));
 
   app.use('/graphql', expressMiddleware(server, {
@@ -29,7 +29,6 @@ const startApolloServer = async () => {
   }));
 
   // When in production use the ../client/dist folder
-
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
 
@@ -39,9 +38,10 @@ const startApolloServer = async () => {
   }
 
   db.once('open', () => {
-      app.listen(process.env.PORT || 5000, () => {
-      console.log(`Express is working on port ${port}`);
+    app.listen(process.env.PORT || 5000, () => {
+      console.log(`Express is working on port ${PORT}`);
     });
+  });
 };
 
 startApolloServer();
