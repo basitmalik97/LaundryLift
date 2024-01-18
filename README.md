@@ -10,6 +10,14 @@ LaundryLift is your go-to platform for hassle-free laundry management. Place ord
 
 At Laundry Lift, we understand the importance of clean, well-maintained clothing. Our services are tailored to meet your specific needs, providing you with the convenience and peace of mind you deserve. Trust us with your laundry, and let us elevate your laundry experience.
 
+## Screenshots
+
+[![Screenshot 1](screenshots/screenshot1.png)](screenshots/screenshot1_large.png)
+*Caption for Screenshot 1*
+
+[![Screenshot 2](screenshots/screenshot2.png)](screenshots/screenshot2_large.png)
+*Caption for Screenshot 2*
+
 ## Contributors
 
 - [Basit Malik & Hector Sanchez](#): Frontend Developer
