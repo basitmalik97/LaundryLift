@@ -14,9 +14,15 @@ At Laundry Lift, we understand the importance of clean, well-maintained clothing
 
 [![Screenshot 1](Homepage-Screenshot-1.png)
 
-
 [![Screenshot 2](Homepage-Screenshot-2.png)
 
+[![Screenshot 3](Homepage-Screenshot-3.png)
+
+[![Screenshot 4](AboutUs-Screenshot.png)
+
+[![Screenshot 5](Services-Page-Screenshot.png)
+
+[![Screenshot 6](Signup-Page-Screenshot.png)
 
 ## Contributors
 
