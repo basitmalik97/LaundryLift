@@ -39,11 +39,10 @@ const startApolloServer = async () => {
   }
 
   db.once('open', () => {
-    app.listen(PORT, () => {
-      console.log(`API server running on port ${PORT}!`);
-      console.log(`Use GraphQL at http://localhost:${PORT}/graphql`);
+      app.listen(process.env.PORT || 5000, () => {
+      const port = server.address().port;
+      console.log(`Express is working on port ${port}`);
     });
-  });
 };
 
 startApolloServer();
