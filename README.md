@@ -50,6 +50,6 @@ As a forward-thinking project, LaundryLift aims to implement Progressive Web App
 
 ## Get Started
 
-Explore LaundryLift by visiting [Deployed Application](#) and delve into the code on [GitHub](#).
+Explore LaundryLift by visiting [Deployed Application](https://laundry-lift2-e6a78dcc7194.herokuapp.com/home) and delve into the code on [GitHub](https://github.com/basitmalik97/LaundryLift).
 
 Enjoy the LaundryLift experience!
